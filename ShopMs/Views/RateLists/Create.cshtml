@@ -1,0 +1,31 @@
+﻿<h1>Create new</h1>
+
+<h4>RateList From</h4>
+
+<form action="/action_page.php">
+    <label for="dId">DiaperId:</label><br>
+    <input type="text" id="dId" name="dId" value=""><br>
+
+    <label for="dName">DiaperName:</label><br>
+    <input type="text" id="dName" name="dName" value=""><br>
+
+    <label for="dSize">Diaper Size:</label><br>
+    <input type="text" id="dSize" name="dSize" value=""><br><br>
+
+    <label for="dPrice">Diaper Price:</label><br>
+    <input type="text" id="dPrice" name="dprice" value=""><br><br>
+
+    <input type="button" value="Submit" onClick=alertFunction()>|
+
+    <script>
+        function alertFunction() {
+            alert("New diaper added to list");
+        }
+    </script>
+
+    <form>
+
+        <a href="/Ratelists/Index">Back to List</a>
+    </form>
+</form>
+

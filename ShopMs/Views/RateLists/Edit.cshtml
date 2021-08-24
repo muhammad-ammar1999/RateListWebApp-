@@ -1,0 +1,30 @@
+﻿<h1>Edit</h1>
+
+<h4>RateList From</h4>
+
+<form action="/action_page.php">
+    <label for="dId">DiaperId:</label><br>
+    <input type="text" id="dId" name="dId" value="2"><br>
+
+    <label for="dName">DiaperName:</label><br>
+    <input type="text" id="dName" name="dName" value="bona papa plus"><br>
+
+    <label for="dSize">Diaper Size:</label><br>
+    <input type="text" id="dSize" name="dSize" value="large"><br><br>
+
+    <label for="dPrice">Diaper Price:</label><br>
+    <input type="text" id="dPrice" name="dprice" value="700"><br><br>
+
+    <input type="button" value="Submit" onClick=alertFunction()>|
+
+    <script>
+        function alertFunction() {
+            alert("list updated");
+        }
+    </script>
+
+    <form>
+
+        <a href="/Ratelists/Index">Back to List</a>
+    </form>
+</form>

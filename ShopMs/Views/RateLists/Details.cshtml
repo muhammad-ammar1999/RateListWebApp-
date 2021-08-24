@@ -1,0 +1,64 @@
+﻿
+ 
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+ 
+<script>
+
+    $(function () {
+
+        var id = 1;
+
+        $.get('/RateListsController/Details/?id=' + id, function (result) {
+
+            $("id").val(result.Id)
+            $("name").val(result.DName)
+            $("size").val(result.DSize)
+            $("price").val(result.DPrice)
+        })
+    })
+
+</script>
+
+<h1>Diaper Details</h1>
+
+<div>
+    <h4>RateList</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            <label for="dSize">Diaper Id:</label><br>
+        </dt>
+        <dd class="col-sm-10">
+              <input type="text" id="id" />
+        </dd>
+        <dt class="col-sm-2">
+            <label for="dSize">Diaper Name:</label><br>
+        </dt>
+        <dd class="col-sm-10">
+            <input type="text" id="name" />
+        </dd>
+        <dt class="col-sm-2">
+            <label for="dSize">Diaper Size:</label><br>
+        </dt>
+        <dd class="col-sm-10">
+            <input type="text" id="size" />
+        </dd>
+        <dt class="col-sm-2">
+            <label for="dSize">Diaper Price:</label><br>
+     </dt>
+        <dd class="col-sm-10">
+            <input type="text" id="price" />
+        </dd>
+    </dl>
+</div>
+
+
+<form>
+
+    <a href="/Ratelists/Index">Back to List</a>
+</form>
+</div>
