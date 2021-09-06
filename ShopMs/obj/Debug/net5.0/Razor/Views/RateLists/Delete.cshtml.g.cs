@@ -26,8 +26,15 @@ using ShopMs.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "C:\Users\muhammad ammar\source\repos\ShopMs\ShopMs\Views\_ViewImports.cshtml"
+using DevExtreme.AspNet.Mvc;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"86caffdbf124f1d2b62aa517112d5e387e9e36e9", @"/Views/RateLists/Delete.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9580dbdd02c29b2b1d0cd68b67a6ae5b16ba7589", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7141b67358dcf1859f28fe2a2b684a4391229805", @"/Views/_ViewImports.cshtml")]
     public class Views_RateLists_Delete : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #line hidden
@@ -99,7 +106,7 @@ using ShopMs.Models;
     </dl>
 
     ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "86caffdbf124f1d2b62aa517112d5e387e9e36e94145", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "86caffdbf124f1d2b62aa517112d5e387e9e36e94332", async() => {
                 WriteLiteral("\r\n\r\n        <input type=\"hidden\" id=\"Id\" />\r\n\r\n        <input type=\"button\" value=\"Delete\" class=\"btn btn-danger\" onClick=alert(\"deleted\")>\r\n        <a href=\"/Ratelists/Index\">Back to List</a>\r\n    ");
             }
             );

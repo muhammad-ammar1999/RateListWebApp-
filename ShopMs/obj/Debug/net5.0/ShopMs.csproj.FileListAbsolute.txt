@@ -323,7 +323,6 @@ C:\Users\muhammad ammar\source\repos\ShopMs\ShopMs\bin\Debug\net5.0\ru\Microsoft
 C:\Users\muhammad ammar\source\repos\ShopMs\ShopMs\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\muhammad ammar\source\repos\ShopMs\ShopMs\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\muhammad ammar\source\repos\ShopMs\ShopMs\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\muhammad ammar\source\repos\ShopMs\ShopMs\obj\Debug\net5.0\ShopMs.csproj.AssemblyReference.cache
 C:\Users\muhammad ammar\source\repos\ShopMs\ShopMs\obj\Debug\net5.0\ShopMs.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\muhammad ammar\source\repos\ShopMs\ShopMs\obj\Debug\net5.0\ShopMs.AssemblyInfoInputs.cache
 C:\Users\muhammad ammar\source\repos\ShopMs\ShopMs\obj\Debug\net5.0\ShopMs.AssemblyInfo.cs
@@ -434,3 +433,11 @@ C:\Users\muhammad ammar\source\repos\ShopMs\ShopMs\obj\Debug\net5.0\Razor\Views\
 C:\Users\muhammad ammar\source\repos\ShopMs\ShopMs\obj\Debug\net5.0\Razor\Views\RateLists\Details.cshtml.g.cs
 C:\Users\muhammad ammar\source\repos\ShopMs\ShopMs\obj\Debug\net5.0\Razor\Views\RateLists\Edit.cshtml.g.cs
 C:\Users\muhammad ammar\source\repos\ShopMs\ShopMs\obj\Debug\net5.0\Razor\Views\RateLists\Index.cshtml.g.cs
+C:\Users\muhammad ammar\source\repos\ShopMs\ShopMs\bin\Debug\net5.0\dotnet-ef.dll
+C:\Users\muhammad ammar\source\repos\ShopMs\ShopMs\bin\Debug\net5.0\DevExtreme.AspNet.Core.dll
+C:\Users\muhammad ammar\source\repos\ShopMs\ShopMs\bin\Debug\net5.0\DevExtreme.AspNet.Data.dll
+C:\Users\muhammad ammar\source\repos\ShopMs\ShopMs\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\muhammad ammar\source\repos\ShopMs\ShopMs\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\muhammad ammar\source\repos\ShopMs\ShopMs\obj\Debug\net5.0\Razor\Views\RateLists\Demo.cshtml.g.cs
+C:\Users\muhammad ammar\source\repos\ShopMs\ShopMs\obj\Debug\net5.0\ShopMs.csproj.AssemblyReference.cache
+C:\Users\muhammad ammar\source\repos\ShopMs\ShopMs\obj\Debug\net5.0\Razor\Views\DataGrid\OverView.cshtml.g.cs

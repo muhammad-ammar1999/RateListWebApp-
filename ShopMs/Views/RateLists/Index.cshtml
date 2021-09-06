@@ -1,35 +1,74 @@
-﻿
+﻿<script>
+
+    var Diapers = [{
+        "ID": 1,
+        "DName": "Good care",
+        "DSize": "M",
+        "DPrice": 650,
+    }, {
+        "ID": 2,
+        "DName": "Royal ",
+        "DSize": "S",
+        "DPrice": 650,
+    }, {
+        "ID": 3,
+        "DName": "Royal ",
+        "DSize": "M",
+        "DPrice": 700,
+    }, {
+        "ID": 4,
+        "DName": "Royal ",
+        "DSize": "M",
+        "DPrice": 700,
+    }, {
+        "ID": 5,
+        "DName": "Royal ",
+        "DSize": "M",
+        "DPrice": 700,
+    }, {
+        "ID": 6,
+        "DName": "Royal ",
+        "DSize": "M",
+        "DPrice": 700,
+    }, {
+        "ID": 7,
+        "DName": "Royal ",
+        "DSize": "M",
+        "DPrice": 700,
+    }, {
+        "ID": 8,
+        "DName": "Royal ",
+        "DSize": "M",
+        "DPrice": 700,
+    }, {
+        "ID": 9,
+        "DName": "Royal ",
+        "DSize": "M",
+        "DPrice": 700,
+    }];
+
+</script>
 
 
+@(Html.DevExtreme().DataGrid()
+    .ID("gridContainer")
+    .ShowBorders(true)
+    .DataSource(new JS("Diapers"))
+    .KeyExpr("ID")
+    .RemoteOperations(false)
+    .AllowColumnReordering(true)
+    .RowAlternationEnabled(true)
+    .ShowBorders(true)
+
+    .Columns(c => {
+        c.Add().DataField("DName");
+        c.Add().DataField("DSize");
+        c.Add().DataField("DPrice");
 
 
+    })
 
-<h1>Index</h1>
+)
 
-<a href="/Ratelists/Create">Create New</a> |
-<a href="/Ratelists/Edit">Edit</a> |
-<a href="/Ratelists/Details">Details</a> |
-<a href="/Ratelists/Delete">Delete</a> |
-<table class="table" style="width:70%">
-    <thead>
-        <tr>
-            <th>Diaper Id</th>
-            <th>Diaper Name</th>
-            <th>Diaper Size</th>
-            <th>Diaper Price</th>
-        </tr>
-    </thead>
-    <tr>
-        <td>1</td>
-        <td>Bona Papa plus</td>
-        <td>S</td>
-        <td>550</td>
-    </tr>
-    <tr>
+<div id="gridContainer"></div>
 
-        <td>2</td>
-        <td>Bona Papa plus</td>
-        <td>M</td>
-        <td>600</td>
-    </tr>
-</table>

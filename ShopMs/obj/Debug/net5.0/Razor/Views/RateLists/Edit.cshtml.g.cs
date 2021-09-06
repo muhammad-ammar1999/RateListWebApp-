@@ -26,8 +26,15 @@ using ShopMs.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "C:\Users\muhammad ammar\source\repos\ShopMs\ShopMs\Views\_ViewImports.cshtml"
+using DevExtreme.AspNet.Mvc;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6deaee1922538fee64f7ae51d011f2590c5a2e9a", @"/Views/RateLists/Edit.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9580dbdd02c29b2b1d0cd68b67a6ae5b16ba7589", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7141b67358dcf1859f28fe2a2b684a4391229805", @"/Views/_ViewImports.cshtml")]
     public class Views_RateLists_Edit : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("action", new global::Microsoft.AspNetCore.Html.HtmlString("/action_page.php"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -57,7 +64,7 @@ using ShopMs.Models;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<h1>Edit</h1>\r\n\r\n<h4>RateList From</h4>\r\n\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6deaee1922538fee64f7ae51d011f2590c5a2e9a3618", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6deaee1922538fee64f7ae51d011f2590c5a2e9a3805", async() => {
                 WriteLiteral(@"
     <label for=""dId"">DiaperId:</label><br>
     <input type=""text"" id=""dId"" name=""dId"" value=""2""><br>
@@ -80,7 +87,7 @@ using ShopMs.Models;
     </script>
 
     ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6deaee1922538fee64f7ae51d011f2590c5a2e9a4585", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6deaee1922538fee64f7ae51d011f2590c5a2e9a4772", async() => {
                     WriteLiteral("\r\n\r\n        <a href=\"/Ratelists/Index\">Back to List</a>\r\n    ");
                 }
                 );

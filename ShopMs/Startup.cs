@@ -27,8 +27,8 @@ namespace ShopMs
         {
             services.AddControllersWithViews();
 
-            services.AddDbContext<ShopMsContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("ShopMsContext")));
+            //services.AddDbContext<ShopMsContext>(options =>
+            //        options.UseSqlServer(Configuration.GetConnectionString("ShopMsContext")));    
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

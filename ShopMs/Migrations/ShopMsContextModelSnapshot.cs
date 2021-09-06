@@ -38,6 +38,31 @@ namespace ShopMs.Migrations
 
                     b.ToTable("RateList");
                 });
+
+            modelBuilder.Entity("ShopMs.Models.Sales", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("DName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("DPrice")
+                        .HasColumnType("int");
+
+                    b.Property<int>("DQty")
+                        .HasColumnType("int");
+
+                    b.Property<string>("DSize")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("SalesReport");
+                });
 #pragma warning restore 612, 618
         }
     }

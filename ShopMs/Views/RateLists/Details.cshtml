@@ -1,28 +1,8 @@
-﻿
- 
+﻿@using ShopMs.Models
 
 @{
-    ViewData["Title"] = "Details";
+    var rateList = ViewData["RateList"] as RateList;
 }
-
- 
-<script>
-
-    $(function () {
-
-        var id = 1;
-
-        $.get('/RateListsController/Details/?id=' + id, function (result) {
-
-            $("id").val(result.Id)
-            $("name").val(result.DName)
-            $("size").val(result.DSize)
-            $("price").val(result.DPrice)
-        })
-    })
-
-</script>
-
 <h1>Diaper Details</h1>
 
 <div>
@@ -31,27 +11,28 @@
     <dl class="row">
         <dt class="col-sm-2">
             <label for="dSize">Diaper Id:</label><br>
+        
         </dt>
         <dd class="col-sm-10">
-              <input type="text" id="id" />
+           @rateList.Id
         </dd>
         <dt class="col-sm-2">
             <label for="dSize">Diaper Name:</label><br>
         </dt>
         <dd class="col-sm-10">
-            <input type="text" id="name" />
+           @rateList.DName
         </dd>
         <dt class="col-sm-2">
             <label for="dSize">Diaper Size:</label><br>
         </dt>
         <dd class="col-sm-10">
-            <input type="text" id="size" />
+            @rateList.DSize
         </dd>
         <dt class="col-sm-2">
             <label for="dSize">Diaper Price:</label><br>
-     </dt>
+        </dt>
         <dd class="col-sm-10">
-            <input type="text" id="price" />
+           @rateList.DPrice
         </dd>
     </dl>
 </div>

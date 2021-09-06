@@ -13,48 +13,68 @@ namespace ShopMs.Controllers
     public class RateListsController : Controller
     {
         private readonly ShopMsContext _context;
-        public RateListsController(ShopMsContext context)
+        public RateListsController()
         {
-            _context = context;
+            _context = new ShopMsContext();
         }
       
+    
         public IActionResult Index()
         {
-          //  ViewData["data"] = 
-
+            var rateList = new RateList()
+            {
+                DName = "Good care",
+                DSize = "M",
+                DPrice = 650,
+            };
+          
+           
+            ViewData["RateList"] = rateList;
             return View();
+            
         }
         // GET: Movies1/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-
-
-            if (id == null)
+            var rateList = new RateList()
             {
-                return NotFound();
+                DName = "Good care",
+                DSize = "M",
+                DPrice = 650,
+            };
+            ViewData["RateList"] = rateList;
+
+           
+
+            return View();
+            //    {
+            //        if (id == null)
+            //        {
+            //            return View();
+            //        }
+
+            //        var rateList = await _context.RateList
+            //            .FirstOrDefaultAsync(m => m.Id == id);
+            //        if (rateList == null)
+            //        {
+            //            return View();
+            //        }
+
+            //        return View(rateList);
+            //    }
             }
 
-            var ratelist = await _context.RateList
-                .FirstOrDefaultAsync(r => r.Id == id);
-            if (ratelist == null)
-            {
-                return NotFound();
-            }
-
-            return View(ratelist);
-        }
-
-        // GET: Movies/Create
-        public IActionResult Create()
+            // GET: Movies/Create
+            public IActionResult Create()
         {
             return View();
         }
         // POST: Movies/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(int id)
+        public async Task<IActionResult> Create(RateList objRateList)
         {
-            return View();
+            return Content(objRateList.DName + " " + objRateList.DSize + " " + objRateList.DPrice);
         }
         // GET: Movies1/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -63,8 +83,6 @@ namespace ShopMs.Controllers
         }
 
         // POST: Movies1/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id)

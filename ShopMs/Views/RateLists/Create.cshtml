@@ -1,31 +1,57 @@
-﻿<h1>Create new</h1>
+﻿@model ShopMs.Models.RateList
+@{
+    ViewData["Title"] = "Create";
+}
+<h1>Create new</h1>
 
 <h4>RateList From</h4>
 
-<form action="/action_page.php">
-    <label for="dId">DiaperId:</label><br>
-    <input type="text" id="dId" name="dId" value=""><br>
+@using (Html.BeginForm())
+{
+    <label for="dName">DiaperName:</label>
+    <br>
+    @Html.TextBoxFor(m => m.DName)
+    <br />
 
-    <label for="dName">DiaperName:</label><br>
-    <input type="text" id="dName" name="dName" value=""><br>
+    <label for="dSize">Diaper Size:</label>
+    <br>
+    @Html.TextBoxFor(m => m.DPrice)
+    <br />
+    <label for="dSize">Diaper Price:</label>
+    <br>
+    @Html.TextBoxFor(m => m.DPrice)
+    <br />
+    <br />
+    <br />
+    <input type="Submit" value="Submit">
 
-    <label for="dSize">Diaper Size:</label><br>
-    <input type="text" id="dSize" name="dSize" value=""><br><br>
+}
+@*<form action="/action_page.php">
 
-    <label for="dPrice">Diaper Price:</label><br>
-    <input type="text" id="dPrice" name="dprice" value=""><br><br>
 
-    <input type="button" value="Submit" onClick=alertFunction()>|
+       <label for="dName">DiaperName:</label><br>
+        <input type="text" id="dName" name="dName" value=""><br>
 
-    <script>
-        function alertFunction() {
-            alert("New diaper added to list");
-        }
-    </script>
+        <label for="dSize">Diaper Size:</label><br>
+        <input type="text" id="dSize" name="dSize" value=""><br><br>
 
-    <form>
+        <label for="dPrice">Diaper Price:</label><br>
+        <input type="text" id="dPrice" name="dprice" value=""><br><br>
 
-        <a href="/Ratelists/Index">Back to List</a>
-    </form>
-</form>
+        <input type="button" value="Submit" onclick="createProduct()";>|
+
+        <script>
+            function createProduct() {
+                var diaperName = document.getElementById("dName").value
+                var diaperSize = document.getElementById("dSize").value
+                var diaperPrice = document.getElementById("dPrice").value
+
+            }
+        </script>
+
+        <form>
+
+            <a href="/Ratelists/Index">Back to List</a>
+        </form>
+    </form>*@
 
