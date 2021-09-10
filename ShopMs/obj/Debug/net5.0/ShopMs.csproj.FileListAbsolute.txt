@@ -441,3 +441,4 @@ C:\Users\muhammad ammar\source\repos\ShopMs\ShopMs\bin\Debug\net5.0\Newtonsoft.J
 C:\Users\muhammad ammar\source\repos\ShopMs\ShopMs\obj\Debug\net5.0\Razor\Views\RateLists\Demo.cshtml.g.cs
 C:\Users\muhammad ammar\source\repos\ShopMs\ShopMs\obj\Debug\net5.0\ShopMs.csproj.AssemblyReference.cache
 C:\Users\muhammad ammar\source\repos\ShopMs\ShopMs\obj\Debug\net5.0\Razor\Views\DataGrid\OverView.cshtml.g.cs
+C:\Users\muhammad ammar\source\repos\ShopMs\ShopMs\obj\Debug\net5.0\Razor\Views\Button\PredefinedTypes.cshtml.g.cs
